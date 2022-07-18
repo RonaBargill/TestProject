@@ -27,4 +27,11 @@ public class StringManipulationsTest {
         int res = StringManipulations.findMathExpressionFromString(compStr);
         assertEquals(res, 27);
     }
+
+    @Test
+    public void testExpressionWithNoParantheses() {
+        String compStr = "4+2*9/2";
+        int res = StringManipulations.findMathExpressionFromString(compStr);
+        assertEquals(res, 13);
+    }
 }
